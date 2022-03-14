@@ -76,3 +76,8 @@
   sudo systemctl start {service_name}
   sudo systemctl status {service_name}
 ```
+
+- Show log:
+```
+  sudo journalctl -f -n 1000 -u yourlure-be
+```
