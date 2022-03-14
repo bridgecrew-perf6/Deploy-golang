@@ -28,6 +28,44 @@
 
 ```go version```
 
-## Download source code
+## Create service
+1. Download source code
 
 ```git config --global http.sslverify false```
+
+```git clone...```
+
+2. Build project
+
+```cd {project_url}```
+
+```go build cmd/main.go```
+
+3. Create service file
+
+```nano /etc/systemd/system/{service_name}.service```
+
+- pates following code and edit to the service scene
+
+    ```
+        [Unit]
+        Description=My Webapp Java REST Service
+        [Service]
+        User=root
+        # The configuration file application.properties should be here:
+
+        #change this to your workspace
+        WorkingDirectory=/home/skillspar/{service_folder}
+
+        #path to executable. 
+        #executable is a bash script which calls jar file
+        ExecStart={Path_to_file_build}
+
+        SuccessExitStatus=143
+        TimeoutStopSec=10
+        Restart=on-failure
+        RestartSec=5
+
+        [Install]
+        WantedBy=multi-user.target
+    ```
