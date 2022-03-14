@@ -17,3 +17,13 @@
 - Install
 
 ```sudo tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz```
+
+2. Setting Go Paths
+
+```sudo nano ~/.profile```
+
+![image](https://user-images.githubusercontent.com/51145983/158134201-1421e737-bdef-470a-b59d-07964e2e8158.png)
+
+```source ~/.profile```
+
+```go version```
