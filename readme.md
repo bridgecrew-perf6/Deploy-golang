@@ -6,8 +6,9 @@
 
 - Download tar file
 
-```cd ~
-```curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
+```cd ~```
+
+```curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz```
 
 - Verify the integrity of the file downloaded
 
