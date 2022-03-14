@@ -79,5 +79,5 @@
 
 - Show log:
 ```
-  sudo journalctl -f -n 1000 -u yourlure-be
+  sudo journalctl -f -n 1000 -u {service_name}
 ```
