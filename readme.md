@@ -43,13 +43,13 @@
 
 3. Create service file
 
-```nano /etc/systemd/system/{service_name}.service```
+```sudo nano /etc/systemd/system/{service_name}.service```
 
 - pates following code and edit to the service scene
 
     ```
         [Unit]
-        Description=My Webapp Java REST Service
+        Description=Golang service
         [Service]
         User=root
         # The configuration file application.properties should be here:
