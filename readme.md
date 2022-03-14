@@ -69,3 +69,9 @@
         [Install]
         WantedBy=multi-user.target
     ```
+   ```
+      sudo systemctl daemon-reload
+      sudo systemctl enable {service_name}.service
+      sudo systemctl start {service_name}
+      sudo systemctl status {service_name}
+   ```
