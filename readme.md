@@ -27,3 +27,7 @@
 ```source ~/.profile```
 
 ```go version```
+
+## Download source code
+
+```git config --global http.sslverify false```
