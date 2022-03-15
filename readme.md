@@ -81,3 +81,8 @@
 ```
   sudo journalctl -f -n 1000 -u {service_name}
 ```
+
+## Other tips in golang
+1. import package from local
+
+```go mod edit -replace skillspar.com/common-rpc=/Users/ngominhthang/go/pkg/mod/skillspar.com/common-rpc/```
